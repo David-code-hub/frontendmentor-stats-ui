@@ -1,0 +1,243 @@
+/*neutral*/
+/*gradients*/
+/*font*/
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background: url("../images/undraw_bar-chart.svg");
+}
+body .outter-container {
+  height: 90vh;
+}
+body .outter-container .card {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 600px;
+  height: 400px;
+  border-radius: 25px;
+  box-shadow: hsla(233.8, 85.2%, 44.9%, 0.16) 0px 10px 50px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.col-desktop-6 {
+  flex-grow: 1;
+}
+
+.left {
+  border-radius: 25px;
+  padding: 25px 35px;
+  background: rgb(46, 43, 233); /*https://cssgradient.io/*/
+  background: linear-gradient(0deg, rgb(46, 43, 233) 3%, rgb(120, 87, 255) 68%);
+}
+.left .text-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.left h2 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.left p {
+  margin-top: 5px;
+}
+
+.right {
+  border-radius: 25px;
+  padding: 25px 35px;
+  background: hsl(0, 0%, 100%);
+}
+.right h2 {
+  font-weight: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.top-text {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.circle {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(78, 33, 202);
+  background: linear-gradient(0deg, rgba(78, 33, 202, 0.1194852941) 25%, rgba(36, 33, 202, 0.7693452381) 86%);
+}
+.circle .inner-circle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.circle .inner-circle p {
+  font-size: 60px;
+  color: hsl(0, 0%, 100%);
+  font-weight: bolder;
+  margin-bottom: 0;
+  margin-top: -10px;
+  display: block;
+}
+.circle .inner-circle span {
+  font-size: 14px;
+  color: hsl(241, 100%, 89%);
+  display: block;
+  margin-top: -10px;
+}
+
+.lavender {
+  color: hsl(241, 100%, 89%);
+}
+
+.text-14px {
+  font-size: 14px;
+}
+
+.white-text {
+  color: hsl(0, 0%, 100%);
+}
+
+.outter-stat-1 {
+  border-radius: 5px;
+  color: hsl(0, 100%, 67%);
+  background: hsla(0, 100%, 67%, 0.08);
+  padding: 15px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.outter-stat-1 .row {
+  justify-content: space-between;
+}
+.outter-stat-1 .row .start {
+  display: flex;
+}
+
+.outter-stat-2 {
+  border-radius: 5px;
+  color: hsl(39, 100%, 56%);
+  background: hsla(39, 100%, 56%, 0.08);
+  padding: 15px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.outter-stat-2 .row {
+  justify-content: space-between;
+}
+.outter-stat-2 .row .start {
+  display: flex;
+}
+
+.outter-stat-4 {
+  border-radius: 5px;
+  color: hsl(234, 85%, 45%);
+  background: hsla(234, 85%, 45%, 0.08);
+  padding: 15px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.outter-stat-4 .row {
+  justify-content: space-between;
+}
+.outter-stat-4 .row .start {
+  display: flex;
+}
+
+.outter-stat-3 {
+  border-radius: 5px;
+  color: hsl(166, 100%, 37%);
+  background: hsla(166, 100%, 37%, 0.08);
+  padding: 15px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.outter-stat-3 .row {
+  justify-content: space-between;
+}
+.outter-stat-3 .row .start {
+  display: flex;
+}
+
+.mr-sm {
+  margin-right: 7px;
+}
+
+.dark-grey-blue-text {
+  color: hsl(224, 30%, 27%);
+}
+
+.dark-grey-blue-text-light {
+  color: hsla(224, 30%, 27%, 0.6);
+}
+
+.icon-image {
+  height: 19px;
+}
+
+.button {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 50px;
+  border: 0px;
+  margin-top: 15px;
+  background: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgb(120, 87, 255);
+  background: linear-gradient(180deg, rgb(120, 87, 255) 15%, rgba(46, 43, 233, 0.9318102241) 100%);
+}
+
+.center-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 200px) and (max-width: 450px) {
+  body {
+    padding: 0em;
+    margin: 0px;
+    background: hsl(0, 0%, 100%);
+  }
+  body .outter-container {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+  }
+  body .outter-container .card {
+    height: 100%;
+    transform: translateY(0%);
+    box-shadow: none;
+  }
+  .left {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .right {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  br {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

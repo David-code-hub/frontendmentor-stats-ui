@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="assets/sass/style.css">
+</head>
+<body>
+    <div class="outter-container">
+      <div class="card">
+        <div class="row">
+          <div class="col-desktop-6 left">
+            <div class="text-center">
+              <h3 class="top-text lavender">Your Result</h3>
+              <div class="circle">
+                <div class="inner-circle">
+                  <p>76</p>
+                  <span>of 100</span>
+                </div>
+              </div>
+              <h2 class="white-text">Great</h2>
+              <p class="lavender text-14px">You scored higher than 65% of<br> the people 
+                who have taken<br> these tests.
+              </p>
+            </div>
+          </div>
+          <div class="col-desktop-6 right">
+            <div class="center-wrapper">
+              <h3 class="top-text">Summary</h3>
+              <div id="stats-display">
+              </div>
+              <button class="button">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  
+  <div class="attribution text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/david-felix-467505128/" target="_blank">David</a>.
+  </div>
+</body>
+<script type="module">
+  let data = []
+  let div = document.getElementById('stats-display');
+
+  fetch('./data.json')
+    .then((response) => response.json())
+    .then((json) =>{
+      for (var i = 0; i < json.length; i++){
+        json[i]
+        console.log(json[i])
+        div.innerHTML += `
+          <div class="outter-stat-${i+1}">
+            <div class="row">
+              <div class="start">
+                <img src="${json[i].icon}" class="mr-sm icon-image"> ${json[i].category}
+              </div>
+              <div class="end dark-grey-blue-text">
+                ${json[i].score}<span class="dark-grey-blue-text-light"> / 100</span>
+              </div>
+            </div>
+          </div>
+        `;
+
+      }
+    }   
+    );
+</script>
+</html>
