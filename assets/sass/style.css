@@ -1,10 +1,9 @@
 /*neutral*/
 /*gradients*/
 /*font*/
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800;900&display=swap");
 body {
   font-family: "Hanken Grotesk", sans-serif;
-  background: url("../images/undraw_bar-chart.svg");
 }
 body .outter-container {
   height: 90vh;
@@ -13,8 +12,8 @@ body .outter-container .card {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  max-width: 600px;
-  height: 400px;
+  max-width: 700px;
+  height: 500px;
   border-radius: 25px;
   box-shadow: hsla(233.8, 85.2%, 44.9%, 0.16) 0px 10px 50px;
   margin: auto;
@@ -48,6 +47,7 @@ body .outter-container .card {
 }
 .left p {
   margin-top: 5px;
+  font-weight: 300;
 }
 
 .right {
@@ -64,14 +64,14 @@ body .outter-container .card {
 }
 
 .top-text {
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 24px;
+  font-weight: 600;
   margin-top: 0;
 }
 
 .circle {
-  height: 140px;
-  width: 140px;
+  height: 190px;
+  width: 190px;
   border-radius: 50%;
   margin: auto;
   display: flex;
@@ -86,7 +86,7 @@ body .outter-container .card {
   transform: translateY(-50%);
 }
 .circle .inner-circle p {
-  font-size: 60px;
+  font-size: 64px;
   color: hsl(0, 0%, 100%);
   font-weight: bolder;
   margin-bottom: 0;
@@ -94,7 +94,7 @@ body .outter-container .card {
   display: block;
 }
 .circle .inner-circle span {
-  font-size: 14px;
+  font-size: 16px;
   color: hsl(241, 100%, 89%);
   display: block;
   margin-top: -10px;
@@ -104,8 +104,8 @@ body .outter-container .card {
   color: hsl(241, 100%, 89%);
 }
 
-.text-14px {
-  font-size: 14px;
+.text-18px {
+  font-size: 18px;
 }
 
 .white-text {
@@ -115,10 +115,11 @@ body .outter-container .card {
 .outter-stat-1 {
   border-radius: 5px;
   color: hsl(0, 100%, 67%);
-  background: hsla(0, 100%, 67%, 0.08);
+  background: hsla(0, 100%, 67%, 0.05);
   padding: 15px;
-  font-size: 14px;
-  margin-bottom: 12px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 .outter-stat-1 .row {
   justify-content: space-between;
@@ -130,10 +131,11 @@ body .outter-container .card {
 .outter-stat-2 {
   border-radius: 5px;
   color: hsl(39, 100%, 56%);
-  background: hsla(39, 100%, 56%, 0.08);
+  background: hsla(39, 100%, 56%, 0.05);
   padding: 15px;
-  font-size: 14px;
-  margin-bottom: 12px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 .outter-stat-2 .row {
   justify-content: space-between;
@@ -145,10 +147,11 @@ body .outter-container .card {
 .outter-stat-4 {
   border-radius: 5px;
   color: hsl(234, 85%, 45%);
-  background: hsla(234, 85%, 45%, 0.08);
+  background: hsla(234, 85%, 45%, 0.05);
   padding: 15px;
-  font-size: 14px;
-  margin-bottom: 12px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 .outter-stat-4 .row {
   justify-content: space-between;
@@ -160,10 +163,11 @@ body .outter-container .card {
 .outter-stat-3 {
   border-radius: 5px;
   color: hsl(166, 100%, 37%);
-  background: hsla(166, 100%, 37%, 0.08);
+  background: hsla(166, 100%, 37%, 0.05);
   padding: 15px;
-  font-size: 14px;
-  margin-bottom: 12px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 .outter-stat-3 .row {
   justify-content: space-between;
@@ -185,16 +189,17 @@ body .outter-container .card {
 }
 
 .icon-image {
-  height: 19px;
+  height: 25px;
 }
 
 .button {
   width: 100%;
-  padding: 15px 10px;
+  padding: 20px 10px;
   border-radius: 50px;
   border: 0px;
   margin-top: 15px;
   background: hsl(224, 30%, 27%);
+  font-size: 17px;
   color: hsl(0, 0%, 100%);
   cursor: pointer;
 }
